@@ -13,8 +13,8 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->string('title',150);
             $table->longText('description');
-            $table->enum('state', [Article::STATE_ACTIVE, Article::STATE_INACTIVE]);
-            $table->foreignId('user_id');
+            $table->integer('state')->default(Article::STATE_INACTIVE);
+            $table->foreignId('user_id')->constrained('users');
 
             $table->timestamps();
         });
