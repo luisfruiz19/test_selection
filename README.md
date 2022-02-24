@@ -32,7 +32,7 @@ Via composer descargar las dependencias de laravel.
 composer install
 ```
 
-## Instalación 02
+## Procedimiento 02
 
 Sacar una copia del archivo .env.example
 
