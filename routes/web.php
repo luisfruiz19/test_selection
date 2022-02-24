@@ -20,3 +20,7 @@ Route::get('/', function () {
 });
 
 Route::resource('articles', ArticlesController::class);
+
+Route::get('/arhivo-json',function(){
+   return view('file-json');
+})->name('arhivo-json');

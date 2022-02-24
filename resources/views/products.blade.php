@@ -1,10 +1,18 @@
 @extends('welcome')
 @section('title','Productos')
 @section('content')
-    <h1>Articulos</h1>
+    <div class="d-inline">
+        <h1 class="d-inline">Articulos</h1> || <a href="{{route('arhivo-json')}}" class="text-decoration-none"> Ir a vista JSON</a>
+    </div>
+
     @include('message.error')
     @include('message.success')
-    <button class="btn btn-sm btn-outline-info  mb-2" data-toggle="modal" data-target="#createProduct">Agregar Nuevo</button>
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-sm btn-outline-info  mb-2" data-toggle="modal" data-target="#createProduct">Agregar Nuevo</button>
+        </div>
+    </div>
+
     @include('modal.create')
     <div class="table-responsive mt-2">
         <table class="table table-hover">
