@@ -79,6 +79,18 @@ php artisan serve
 
 Abrir en el navegador el siguiente link http://127.0.0.1:8000/
 
+## Ejecutar Pruebas (opcional)
+
+
+
+```(bash)
+php artisan test
+```
+
+** Si las pruebas ejecutadas salen todo el verde, quiere decir que el codigo realizado esta correctamente
+
+** Si las pruebas ejecutadas salen en rojo, quiere decir que esta fallando.
+
 
 ## Portafolio
 
